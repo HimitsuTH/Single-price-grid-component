@@ -1,0 +1,131 @@
+@import url(https://fonts.google.com/specimen/Karla);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Karla", Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: hsl(204, 43%, 93%);
+}
+p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.5rem;
+}
+
+.title {
+  margin: 1rem 0px;
+  font-weight: 700;
+}
+
+.sub_title {
+  font-size: 18px;
+}
+.price {
+  font-size: 26px;
+  font-weight: 600;
+}
+.price > span {
+  font-size: 16px;
+}
+
+/* TEXT COLOR */
+.Cyan {
+  color: hsl(179, 62%, 43%);
+}
+.Light_Gray {
+  color: hsl(204, 43%, 93%);
+}
+.Grayish {
+  color: hsl(218, 22%, 67%);
+}
+
+/* BOX STYLES */
+.box_1 {
+  background-color: #fff;
+}
+.box_1 > P {
+  margin: 1rem 0;
+}
+
+.box_2 {
+  background-color: hsl(179, 62%, 43%);
+}
+
+.box_2 > p {
+  margin: 1rem 0;
+}
+
+.box_3 {
+  background-color: hsl(179, 62%, 43%, 0.8);
+}
+
+/* COTAINER STYLESS */
+.container {
+  margin: 2rem;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.container > div {
+  padding: 1.25rem;
+  height: 100%;
+  box-shadow: 0px 0px 3px hsl(218, 22%, 67%);
+}
+
+/* BUTTON STYLESS */
+.btn {
+  width: 100%;
+  cursor: pointer;
+  background-color: hsl(71, 73%, 54%);
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.25rem;
+  box-shadow: 0px 0px 3px hsl(218, 22%, 67%);
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+@media (min-width: 375px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    width: 700px;
+  }
+  .container > div {
+    padding: 2.5rem;
+  }
+  .container .box_1 {
+    grid-column: 1 / span 2;
+  }
+  .container .box_1 p:not(:nth-child(2)) {
+    padding-right: 4rem;
+  }
+
+  .btn {
+    padding: 1.25rem 0.75rem;
+    margin: 1.5rem 0;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+.footer > p {
+  color: #333;
+}
