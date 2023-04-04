@@ -49,7 +49,7 @@ p {
 .box_1 {
   background-color: #fff;
 }
-.box_1 > P {
+.box_1 > p {
   margin: 1rem 0;
 }
 
@@ -65,7 +65,7 @@ p {
   background-color: hsl(179, 62%, 43%, 0.8);
 }
 
-/* COTAINER STYLESS */
+/* COTAINER STYLES */
 .container {
   margin: 2rem;
   border-radius: 0.5rem;
